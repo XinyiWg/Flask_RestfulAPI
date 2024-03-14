@@ -33,10 +33,15 @@ To get started with this project, follow these steps:
 This project uses a `.flaskenv` file to manage Flask application environment variables.
 
 3. **Set up the database:**
-
-   This project uses SQLAlchemy for database interaction and Flask-Migrate for managing database migrations. Make sure you have a database server running and configure the database URI in the configuration file (`config.py`). Then, apply the database migrations:
+   To configure the database URL, you can pass it as an argument to the create_app function in your app.py or set it as an environment variable.
 
    ```bash
+   export DATABASE_URL="postgresql://username:password@localhost/dbname"
+   ```
+
+   ```bash
+   flask db init
+   flask db migrate -m "Description of changes"
    flask db upgrade
    ```
 
@@ -84,4 +89,8 @@ Run an existing container:
 
 ```bash
 docker start my_container
+```
+
+```
+
 ```

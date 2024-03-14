@@ -1,1 +1,0 @@
-# will move the config in app to here and import it in app.py soon
