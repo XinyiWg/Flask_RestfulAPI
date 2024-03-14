@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Runtime data
+instance/
+
+# Flask-related
+.cache/
+.flaskenv
+.env
+.env.*
+.pytest_cache/
+coverage/
+htmlcov/
+
+# SQLAlchemy migration
+migrations/
